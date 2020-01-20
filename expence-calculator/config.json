@@ -3,7 +3,7 @@
         "host": "cluster0-6k5ja.mongodb.net",
         "dbname": "Expences",
         "username": "dev",
-        "password": "DEV123"
+        "password": "DEV123!"
     },
     "jwt": {
         "key": "kluch"
