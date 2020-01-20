@@ -1,0 +1,20 @@
+
+#register{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.box-container-register{
+    
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 5px;
+     
+    
+}

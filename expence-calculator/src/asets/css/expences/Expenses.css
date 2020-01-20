@@ -1,0 +1,104 @@
+
+
+.button.active {
+    background-color: #1DD1A1;
+    color:#fff;
+    border-radius: 5px;
+    width: 170px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 50px;
+    height: 60px;
+}
+
+.button {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #C9E5DD;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 170px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 60px;
+}
+
+.tabs{
+    display: flex;
+    padding: 30px 0px 30px 30px;
+}
+
+.checklist{
+    padding-left: 40px;
+}
+
+#myList{
+    border: 2px solid;
+    border-color: #C6C6C6;
+    height: 25px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+label{
+    color: black;
+}
+
+.expences-par{
+    margin-left: 60px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.hader-line {
+    Font-size: 16px;
+    Color: #404040;
+    Border-bottom: 20px solid;
+    Border-color: #707070;
+   
+}
+
+/* .row-lines {
+    Font-size: 16px;
+    Color: #575757;
+    Background: #fff;
+    text-align: center;
+    border-bottom: 15px solid;
+    border-color: #E5EDF5;
+
+} */
+
+
+td{
+    padding: 20px;
+}
+
+th{
+    padding: 20px;
+    border-bottom: 1px solid;
+    border-color: #707070;
+    
+}
+
+.footer{
+    position: fixed;
+    background-color: #9E9C9E;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    
+    opacity: 0.6;
+}
+
+.total-spent{
+    text-align: right;
+    margin-right: 70px;
+    font-size: 22px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+

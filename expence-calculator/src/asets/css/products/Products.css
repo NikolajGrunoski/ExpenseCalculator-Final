@@ -1,0 +1,106 @@
+#products {
+    width: 100%;
+    height: 100%;
+}
+
+.hader-line {
+    Font-size: 16px;
+    Color: #404040;
+    Border-bottom: 15px solid;
+    Border-color: #707070;
+    Background: #fff;
+    text-align: center;
+   
+}
+
+.row-lines {
+    Font-size: 16px;
+    Color: #575757;
+    Background: #fff;
+    text-align: center;
+    border-bottom: 15px solid;
+    border-color: #E5EDF5;
+
+}
+
+.title{
+    Font-size: 22px;
+    font-weight: bold;
+    Color: #000000;
+    
+}
+
+.checklist-form{
+    height: 35px;
+    background: transparent;
+    border: 2px;
+    border-color: #C6C6C6;
+    
+}
+
+
+button{
+    /* margin-left: 30px; */
+    background: transparent;
+}
+
+.edit-delete-btn{
+    border-color: transparent;
+    margin: 2px;
+    Color: #575757;
+    display:flex;
+    justify-content:space-between;
+}
+
+.edit-del-btn{
+    border-color: transparent;
+    margin: 2px;
+    Color: #575757;
+    display:flex;
+    justify-content:space-between;
+
+}
+
+.fixed-button{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    border-radius: 5px;
+    background-color: #596677;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    border-color: transparent;
+    font-style: bolder;
+}
+
+td{
+    padding: 20px;
+  
+}
+
+th{
+    padding: 20px;
+    /* border-bottom: 1px #575757 solid; */
+}
+
+.title-checkbox{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 100px 0px 90px;
+    /* padding-bottom: 10px; */
+    
+}
+
+#myList{
+    border: 2px solid;
+    border-color: #C6C6C6;
+    height: 25px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+
+
+
+
