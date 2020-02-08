@@ -1,31 +1,38 @@
-import ReactDOM from 'react-dom'
-import React from 'react'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Products from './components/calculator/Products'
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'
-import ProductsPage from './components/products/ProductsPage'
-import NewProduct from './components/newProduct/NewProduct'
-import ExpencesPage from './components/expences/ExpencesPage'
-import Alert from './components/alert/Alert'
+import Expences from './components/calculator/Expences'
+import Newproduct from './components/Newproduct/Newproduct'
+
+
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from './redux/store'
 
 const app = document.getElementById('root')
 
 
 
 const Routes = () => {
-    return(
+    return (
         <Router>
             <Switch>
-                <Route exact path ='/' component={Login}/>
-                <Route exact path='/register' component={Register}/>
-                <Route exact path='/products' component={ProductsPage}/>
-                <Route exact path='/newproduct' component={NewProduct}/>
-                <Route exact path='/expences' component={ExpencesPage}/>
-                <Route exact path='/alert' component={Alert}/>
+                <Route exact path="/" component={Login} />
+                <Route exact path="/register" component={Register} />
+                <Route exact path='/newproduct' render={() => <Newproduct />} />
+                <Route exact path='/products' render={() => <Products />} />
+                <Route exact path="/edit-product" render={() => <Newproduct />} />
+                <Route exact path="/expences" render={() => <Expences />} />
             </Switch>
         </Router>
     )
 }
 
-ReactDOM.render(<Routes/>, app) 
+
+ReactDOM.render(
+    <Provider store={store}>
+        <Routes />
+    </Provider>, app)
