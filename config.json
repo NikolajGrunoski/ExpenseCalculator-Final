@@ -1,7 +1,7 @@
 {
     "db": {
         "host": "cluster0-6k5ja.mongodb.net",
-        "dbname": "Expences",
+        "dbname": "products",
         "username": "dev",
         "password": "DEV123!"
     },
