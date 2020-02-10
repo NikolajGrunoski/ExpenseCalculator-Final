@@ -48,7 +48,7 @@ class Register extends React.Component {
             this.state.country != null ||
             this.state.password != null) {
             event.preventDefault()
-            axios.post('https://hidden-everglades-59214.herokuapp.com/app/v1/auth/register', {
+            axios.post('/app/v1/auth/register', {
                 first_name: this.state.first_name,
                 last_name: this.state.last_name,
                 email: this.state.email,
@@ -60,7 +60,7 @@ class Register extends React.Component {
             })
                 .then(res => {
                     setTimeout(() => {
-                        axios.post('https://hidden-everglades-59214.herokuapp.com/app/v1/auth/login',
+                        axios.post('/app/v1/auth/login',
                             {
                                 email: this.state.email,
                                 password: this.state.password

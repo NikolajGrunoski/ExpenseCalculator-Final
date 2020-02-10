@@ -28,7 +28,7 @@ class Expences extends React.Component {
             'September', 'October', 'November', 'December'];
     }
     componentDidMount() {
-        axios.get("https://hidden-everglades-59214.herokuapp.com/app/v1/products/?sort=date:desc",
+        axios.get("/app/v1/products/?sort=date:desc",
             { headers: { "Authorization": `Bearer ${localStorage.getItem('jwt')}` } })
             .then(res => {
                 store.dispatch(getProducts(res.data))
@@ -46,7 +46,7 @@ class Expences extends React.Component {
 
     componentDidUpdate() {
         if (this.state.yearlySelected === 'all') {
-            axios.get("https://hidden-everglades-59214.herokuapp.com/app/v1/products/?sort=date:desc",
+            axios.get("/app/v1/products/?sort=date:desc",
                 {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('jwt')}`
@@ -71,7 +71,7 @@ class Expences extends React.Component {
             let dateFrom = new Date(`${this.state.yearlySelected}-01-01 00:00:00.000`).getTime()
             let dateTo = new Date(`${this.state.yearlySelected}-12-31 23:59:59.000`).getTime()
             console.log(dateFrom + ' ' + dateTo)
-            axios.get(`https://hidden-everglades-59214.herokuapp.com/app/v1/products/?date_from=${dateFrom}&date_to=${dateTo}`,
+            axios.get(`/app/v1/products/?date_from=${dateFrom}&date_to=${dateTo}`,
                 {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('jwt')}`
@@ -87,7 +87,7 @@ class Expences extends React.Component {
                 })
                 .catch(err => console.log(err));
         } else if (this.state.monthlySelected === 'months') {
-            axios.get("https://hidden-everglades-59214.herokuapp.com/app/v1/products/?sort=date:desc",
+            axios.get("/app/v1/products/?sort=date:desc",
                 {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('jwt')}`
@@ -123,7 +123,7 @@ class Expences extends React.Component {
             let dateTo = new Date(`${this.state.yearlySelected}-${monthNum}-31 23:59:59.000`).getTime()
             console.log(dateFrom + " " + dateTo)
             console.log(monthNum + 'Month is')
-            axios.get(`https://hidden-everglades-59214.herokuapp.com/app/v1/products/?date_from=${dateFrom}&date_to=${dateTo}`,
+            axios.get(`/app/v1/products/?date_from=${dateFrom}&date_to=${dateTo}`,
                 {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('jwt')}`
